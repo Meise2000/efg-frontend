@@ -1,0 +1,18 @@
+{
+  "name": "efg-frontend",
+  "version": "1.0.0",
+  "description": "Frontend of Rübenkamp.church",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Meise2000/efg-frontend"
+  },
+  "author": "Developers of rübenkamp.church",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^5.0.4"
+  }
+}
