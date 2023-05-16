@@ -1,0 +1,90 @@
+* [hidden] {
+    display: none !important;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+footer,
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    color:aliceblue;
+    padding: 1em;
+    align-items: center;
+    font-size: 1em;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+header nav li {
+    display: inline-block;
+    margin: 0.5em 1em;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 1em;
+    min-height: calc(100vh - 7.2em); /* footer 3 + header 4 */
+    box-sizing: border-box;
+}
+
+#sermons div {
+    display: grid;
+    --cols: 4;
+    --rows: calc(12 / var(--cols));
+    grid-template-columns: repeat(var(--cols), auto);
+    grid-template-rows: repeat(var(--rows), auto);
+    gap: 1em;
+}
+
+#sermons article {
+    --padd: calc(var(--cols) * 1em);
+    width: calc((100vw - calc(var(--padd) + 1em)) / var(--cols));
+}
+
+@media (width < 83em) and (width >= 62em) {
+    #sermons div {
+        --cols: 3;
+    }
+}
+
+@media (width < 62em) and (width >= 41em) {
+    #sermons div {
+        --cols: 2;
+    }
+}
+
+@media (width < 41em) {
+    #sermons div {
+        --cols: 1;
+    }
+}
+
+#sermons article h2 {
+    font-size: 1.2em;
+    padding: 0.3em;
+    margin: 0;
+    background-color: aquamarine;
+}
+
+#sermons article iframe {
+    width: inherit;
+    aspect-ratio: 16/9;
+}

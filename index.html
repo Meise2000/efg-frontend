@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Rübenkamp Church</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="src/app.css">
+    <link type="image/icon" rel="stylesheet" href="src/favicon.ico">
+    <script type="module" src="src/app.ts"></script>
+</head>
+<body>
+    <header>
+        <a href="#welcome">Home</a>
+        <nav>
+            <ul>
+                <li><a href="#about">Über uns</a></li>
+                <li><a href="#sermons">Predigten</a></li>
+                <li><a href="#events">Termine</a></li>
+                <li><a href="#support">Spenden</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="welcome">
+            <h1>Willkommen in der Auferstehungskirche <span>👋🏼</span></h1>
+            <div>
+                <article>
+                    <h2>Gottesdienst</h2>
+                    <p></p>
+                </article>
+                <article>
+                    <h2>Das sind wir</h2>
+                    <p></p>
+                </article>
+                <article>
+                    <h2>Termine</h2>
+                    <p></p>
+                </article>
+            </div>
+        </section>
+        <section id="about" hidden>
+            <h2>About</h2>
+        </section>
+        <section id="sermons" hidden>
+            <h2>Predigten</h2>
+            <template>
+                <article>
+                    <h2></h2>
+                    <iframe area-label="Video" title="Video from" frameborder="0" allowfullscreen></iframe>
+                </article>
+            </template>
+            <div>
+            </div>
+        </section>
+        <section id="events" hidden>
+            <h2>Termine</h2>
+        </section>
+        <section id="support" hidden>
+            <h2>Spenden</h2>
+        </section>
+    </main>
+    <footer>
+        // TODO Kontakt etc
+    </footer>
+</body>
+</html>

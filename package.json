@@ -4,7 +4,10 @@
   "description": "Frontend of Rübenkamp.church",
   "main": "index.html",
   "scripts": {
-    "test": "test"
+    "start": "npm run dev",
+    "dev": "vite",
+    "build": "tsc && vite build --base \"./\"",
+    "format": "rome format --write src" 
   },
   "repository": {
     "type": "git",
@@ -12,7 +15,9 @@
   },
   "author": "Developers of rübenkamp.church",
   "license": "MIT",
-  "dependencies": {
-    "typescript": "^5.0.4"
+  "devDependencies": {
+    "typescript": "^5.0.4",
+    "vite" : "^4.3.5",
+    "rome" : "^12.0.0"
   }
 }
